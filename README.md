@@ -1,10 +1,30 @@
-# Tay's Templates
+# Tay's Templates: React
 
-A collection of boilerplate that I use for all my projects
+## Setup
 
-## How to Use
+### Create React App
 
-1. Click the "Use this template" button on this repository
-!["Use this template" button](https://docs.github.com/assets/cb-36544/images/help/repository/use-this-template-button.png)
-2. Clone your new reposity locally
-3. Move the folder you want to use up a level, and delete all other folders
+https://create-react-app.dev/docs/getting-started/
+
+```
+npx create-react-app MyApp --template typescript
+```
+
+### Mandatory Dependencies
+
+```
+npm i -S react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material fontsource-roboto
+npm i -D sass eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks prettier eslint-config-prettier eslint-plugin-prettier
+```
+
+Note: `@emotion/react` and `@emotion/styled` are currently dependencies of `@mui/material`. Consult [MUI's installation page](https://mui.com/getting-started/installation/) to verify that this is still the case.
+
+### Optional Dependencies
+
+```
+npm i -S @feedback-fish/react
+```
+
+## Hosting
+
+[Netlify](https://www.netlify.com/) is a great option for free hosting without the startup delay of Heroku.
